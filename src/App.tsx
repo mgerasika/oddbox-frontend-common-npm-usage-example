@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+//!!!Warning wrong!!! 
+// import { Avatar, Button } from 'oddbox-frontend-common'
+
+// @ts-ignore
+import { Avatar } from 'oddbox-frontend-common/dist/es/general-ui/avatar/avatar.component'
+// @ts-ignore
+import {  Button } from 'oddbox-frontend-common/dist/es/general-ui/button/button.component'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div >
+			<Button name='hello' variant='orange'>Orange</Button>
+			<Avatar firstName='John' lastName='Dest'></Avatar>
+		</div>
+	);
 }
 
 export default App;
